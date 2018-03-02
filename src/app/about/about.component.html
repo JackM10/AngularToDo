@@ -1,0 +1,11 @@
+<p>
+  About the ToDo application. <a href="" (click)="sendMeHome()"><strong>Go to home page</strong></a>
+</p>
+
+<p> Here is the list of all ToDos from Home component: </p>
+
+<ul>
+  <li *ngFor="let goal of goals">
+    {{goal}}
+  </li>
+</ul>
