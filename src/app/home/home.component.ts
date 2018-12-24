@@ -42,12 +42,12 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     this._data.getToDos().subscribe(result => {
       this.toDos = result;
-      console.log(this.toDos);
     });
     this._data.goal.subscribe(res => this.goals = res);
     this.itemCount = this.goals.length;
     this._data.changeGoal(this.goals);
   }
+  
   addItem() {
     this.goals.push(this.goalText);
     this.goalText = '';
